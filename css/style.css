@@ -1,0 +1,50 @@
+/*
+Theme Name: Open innovation
+Author: Annaelle et Julian
+Description: Template WordPress pour le projet open innovation WIS 2
+Version: 0.0.1
+*/
+
+h1 a{
+	color: black;
+}
+
+.header {
+background: #377bb5;
+}
+#navigation-principale li {
+position: relative;
+display: inline-block;
+padding: 10px;
+font-weight: 500;
+}
+#navigation-principale li a {
+color: #fff;
+}
+
+
+.class-nouveau-menu ul{
+    list-style-type: none;
+    list-style: none;
+    list-style-image: none;
+}
+
+.class-nouveau-menu ul li{
+	display: inline;
+}
+
+.class-nouveau-menu ul li a{
+	padding: 1em 1.25em;
+	color: black;
+}
+
+footer{
+	background-color: grey;
+	text-align: center;
+}
+footer p{
+	margin: 0;
+}
+footer a {
+	color: black;
+}
