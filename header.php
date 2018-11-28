@@ -26,14 +26,16 @@
 <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
 </div>
 
+<div>
+	<?php 
+		if ( function_exists( 'the_custom_logo' ) ) {
+    the_custom_logo();
+}
+	?>
+</div>
+
 <div class="header">
 <nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigation-principale" role="navigation">
 <?php wp_nav_menu( array( 'Open innovation' => 'menu-principal' ) ); ?>
 </nav>
 </div>
-
-<?php
-	wp_nav_menu( array( 
-		'theme_location' => 'menu-principal', 
-		'container_class' => 'class-nouveau-menu' ) ); 
-?>

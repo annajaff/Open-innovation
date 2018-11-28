@@ -19,7 +19,7 @@
 					if($post->post_parent=="20") {
 						echo '<a href="'.get_permalink(20).'" class="link_back button_">⇦ '.__('Retour à nos solutions','Open innovation').'</a>';
 					}
-					edit_post_link( __( 'Modifier', 'Open innovation' ), '<span class="edit-link">', '</span>' );
+					edit_post_link( __( 'Modifier ', 'Open innovation' ), '<span class="edit-link">', '</span>' );
 				?>
 			</div>
 		</div>
