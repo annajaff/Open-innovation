@@ -25,3 +25,24 @@ function themename_custom_logo_setup() {
     add_theme_support( 'custom-logo', $defaults );
 }
 add_action( 'after_setup_theme', 'themename_custom_logo_setup' );
+
+
+//logo sur la page de connexion
+function my_loginlogo() {
+  echo '<style type="text/css">
+    h1 a {
+      background-image: url(' . get_template_directory_uri() . '/img/logo.png) !important;
+    }
+  </style>';
+		}
+		add_action('login_head', 'my_loginlogo');
+		 
+		function my_loginURL() {
+		    return '#';
+		}
+		add_filter('login_headerurl', 'my_loginURL');
+		 
+		function my_loginURLtext() {
+		    return 'Mamie Cendrine';
+		}
+		add_filter('login_headertitle', 'my_loginURLtext');

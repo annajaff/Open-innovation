@@ -26,7 +26,7 @@
 <p class="lead blog-description"><?php echo get_bloginfo( 'description' ); ?></p>
 </div>
 
-<div>
+<div class="logo">
 	<?php 
 		if ( function_exists( 'the_custom_logo' ) ) {
     the_custom_logo();
