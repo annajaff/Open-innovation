@@ -9,11 +9,15 @@ get_header();
 	
 ?>
 
-<div class="container-home">
+<div class="container">
 	<article class="contenu-area">
 		<div class="contenu-container">
 				<h1 class="h1" itemprop="headline">titre</h1>
-			
+
+
+			<?php the_field('introduction'); ?> <br>
+			<?php the_field('crowdfunding'); ?> <br>
+			<?php the_field('crowdfunding_img'); ?>
 			
 			<div class="container_editor">
 				<?php the_content(); ?>
@@ -25,7 +29,7 @@ get_header();
 					if($post->post_parent=="20") {
 						echo '<a href="'.get_permalink(20).'" class="link_back button_">⇦ '.__('Retour à nos solutions','Open innovation').'</a>';
 					}
-					edit_post_link( __( 'Modifier ', 'Open innovation' ), '<span class="edit-link">', '</span>' );
+					
 				?>
 			</div>
 		</div>
