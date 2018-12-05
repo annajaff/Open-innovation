@@ -27,7 +27,7 @@
 </div>
 
 <div class="logo">
-	<?php 
+	<?php
 		if ( function_exists( 'the_custom_logo' ) ) {
     the_custom_logo();
 }
@@ -35,7 +35,7 @@
 </div>
 
 <div class="header">
-<nav class="navbar navbar-expand-lg navbar-light bg-light" id="navigation-principale" role="navigation">
+<nav  id="navigation-principale" role="navigation">
 <?php wp_nav_menu( array( 'Open innovation' => 'menu-principal' ) ); ?>
 </nav>
 </div>

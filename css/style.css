@@ -21,15 +21,37 @@ h1 a{
 	color: black;
 }
 
-.header {
-background: #388bb5;
+#navigation-principale, .logo{
+background: red;
+width: 100%;
+margin:auto;
+	text-align:center;
 }
+
+.header {
+	width: 100%;
+}
+
+.logo a{
+	position: relative;
+	top:75px;
+}
+
+#navigation-principale .page-item-17{
+	padding-right: 150px;
+}
+
+#navigation-principale{
+	margin-bottom: 50px;
+}
+
 #navigation-principale li {
 position: relative;
 display: inline-block;
 padding: 10px;
 font-weight: 500;
 }
+
 #navigation-principale li a {
 color: black;
 }
